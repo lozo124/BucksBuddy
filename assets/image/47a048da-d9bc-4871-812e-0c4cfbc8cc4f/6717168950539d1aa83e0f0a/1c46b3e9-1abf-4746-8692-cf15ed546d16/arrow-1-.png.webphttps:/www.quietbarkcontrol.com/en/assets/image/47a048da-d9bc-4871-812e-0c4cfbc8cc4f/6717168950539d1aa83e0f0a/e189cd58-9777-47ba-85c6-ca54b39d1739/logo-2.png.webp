@@ -1,0 +1,20 @@
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<h1>404 Not Found</h1>
+<ul>
+<li>Code: NoSuchKey</li>
+<li>Message: The specified key does not exist.</li>
+<li>Key: en/assets/image/47a048da-d9bc-4871-812e-0c4cfbc8cc4f/6717168950539d1aa83e0f0a/1c46b3e9-1abf-4746-8692-cf15ed546d16/arrow-1-.png.webphttps://www.quietbarkcontrol.com/en/assets/image/47a048da-d9bc-4871-812e-0c4cfbc8cc4f/6717168950539d1aa83e0f0a/e189cd58-9777-47ba-85c6-ca54b39d1739/logo-2.png.webp</li>
+<li>RequestId: 2JDD33EB87PWG0SX</li>
+<li>HostId: G+Yj6ZpBJzXL1hu2q5goHdmVtb5seB4BC4T1agCUIDZGvwsDVWNZ6TZb80X4W9cBSYohejhP2S0=</li>
+</ul>
+<h3>An Error Occurred While Attempting to Retrieve a Custom Error Document</h3>
+<ul>
+<li>Code: NoSuchKey</li>
+<li>Message: The specified key does not exist.</li>
+<li>Key: error.html</li>
+</ul>
+<hr/>
+</body>
+</html>
