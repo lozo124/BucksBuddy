@@ -214,6 +214,36 @@
     
     <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '1135098105216173');fbq('track', 'PageView');</script>
 
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // 检查当前URL中是否存在查询参数
+  if (window.location.search) {
+    // 获取当前URL的所有查询参数 (例如: ?utm_source=facebook&utm_medium=cpc)
+    var params = window.location.search;
+
+    // 找到页面上所有指向您主站的链接
+    // 请将 "bloopberry.com" 替换成您主站的真实域名
+    var domainToModify = 'bloopberry.com';
+    var allLinks = document.getElementsByTagName('a');
+
+    for (var i = 0; i < allLinks.length; i++) {
+      var link = allLinks[i];
+      // 检查链接的域名是否是您的主站
+      if (link.hostname === domainToModify) {
+        // 为链接添加从Lander URL获取的参数
+        // 这段代码能智能处理链接本身是否已有参数
+        if (link.search) {
+          // 如果链接本身已经有?a=1这样的参数，则用&连接
+          link.href += '&' + params.substring(1);
+        } else {
+          // 如果链接本身没有参数，则用?连接
+          link.href += params;
+        }
+      }
+    }
+  }
+});
+</script>
     
 </head>
 
